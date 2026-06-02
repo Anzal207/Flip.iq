@@ -1,0 +1,222 @@
+/* ==========================================
+   TOP BAR
+========================================== */
+
+.topbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:80px;
+
+    background:#152018;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:0 24px;
+
+    z-index:3000;
+
+}
+
+.menu-btn{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    padding:0;
+
+}
+
+.topbar h1{
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    margin:0;
+
+}
+
+/* ==========================================
+   SIDEBAR
+========================================== */
+
+.sidebar{
+
+    position:fixed;
+
+    top:80px;
+
+    left:-260px;
+
+    width:260px;
+
+    height:calc(100vh - 80px);
+
+    background:#152018;
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+    padding:25px 20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:left .3s ease;
+
+    z-index:2500;
+
+}
+
+.sidebar.open{
+
+    left:0;
+
+}
+
+/* ==========================================
+   NAVIGATION
+========================================== */
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.nav-link{
+
+    display:flex;
+
+    align-items:center;
+
+    padding:14px 16px;
+
+    border-radius:14px;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.2s ease;
+
+}
+
+.nav-link:hover{
+
+    background:rgba(255,255,255,.06);
+
+}
+
+.nav-link.active{
+
+    background:#3f6b42;
+
+}
+
+/* ==========================================
+   CLOSE BUTTON
+========================================== */
+
+.close-menu{
+
+    margin-top:auto;
+
+    text-align:center;
+
+    padding:18px;
+
+    cursor:pointer;
+
+    color:#ffb4b4;
+
+    font-weight:600;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ==========================================
+   MAIN CONTENT
+========================================== */
+
+.main-content{
+
+    margin-left:0;
+
+    padding:120px 40px 40px;
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media(max-width:768px){
+
+    .topbar{
+
+        height:70px;
+
+        padding:0 16px;
+
+    }
+
+    .topbar h1{
+
+        font-size:1.7rem;
+
+    }
+
+    .sidebar{
+
+        top:70px;
+
+        height:calc(100vh - 70px);
+
+    }
+
+    .main-content{
+
+        padding:100px 20px 20px;
+
+    }
+
+}
+
+.sidebar{
+    width:280px;
+    left:-280px;
+}
+
+.nav-link{
+    font-weight:600;
+}
+
+.close-menu:hover{
+    color:white;
+}

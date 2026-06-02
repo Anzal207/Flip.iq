@@ -1,0 +1,79 @@
+/* ==========================================
+   FADE UP
+========================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+/* ==========================================
+   DEFAULT STATE
+========================================== */
+
+.hero-card,
+.stat-card,
+.action-card,
+.deck-card,
+.about-card{
+
+    opacity:0;
+
+}
+
+/* ==========================================
+   STAGGERED ANIMATIONS
+========================================== */
+
+.hero-card{
+
+    animation:
+        fadeUp .5s ease forwards;
+
+}
+
+.stat-card{
+
+    animation:
+        fadeUp .5s ease .1s forwards;
+
+}
+
+.action-card{
+
+    animation:
+        fadeUp .5s ease .2s forwards;
+
+}
+
+.deck-card{
+
+    animation:
+        fadeUp .5s ease .3s forwards;
+
+}
+
+.about-card{
+
+    animation:
+        fadeUp .5s ease .4s forwards;
+
+}
+

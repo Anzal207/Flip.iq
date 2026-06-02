@@ -1,0 +1,74 @@
+.page-header{
+
+    margin-bottom:30px;
+
+}
+
+.settings-card{
+
+    background:var(--surface);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    margin-bottom:25px;
+
+}
+
+.setting-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 0;
+
+}
+
+.setting-row:not(:last-child){
+
+    border-bottom:
+        1px solid rgba(255,255,255,.06);
+
+}
+
+.setting-row input{
+
+    width:22px;
+
+    height:22px;
+
+}
+
+.danger-zone{
+
+    border-color:
+        rgba(239,68,68,.25);
+
+}
+
+.danger-btn{
+
+    margin-top:15px;
+
+    border:none;
+
+    padding:14px 20px;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    background:#ef4444;
+
+    color:white;
+
+    font-weight:600;
+
+}
