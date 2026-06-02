@@ -1,0 +1,112 @@
+<!doctype html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Flip.IQ | Study</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+    <link rel="stylesheet" href="css/quick-study.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    ```
+  </head>
+
+  <body>
+    <!-- TOP BAR -->
+
+    <header class="topbar">
+      <button id="menuBtn" class="menu-btn">☰</button>
+
+      <h1>Flip.IQ</h1>
+    </header>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar" id="sidebar">
+      <nav>
+        <a href="index.html" class="nav-link"> Home </a>
+
+        <a href="decks.html" class="nav-link"> My Decks </a>
+
+        <a href="quick-study.html" class="nav-link active"> Quick Study </a>
+
+        <a href="analytics.html" class="nav-link"> Analytics </a>
+
+        <a href="achievements.html" class="nav-link"> Achievements </a>
+
+        <a href="settings.html" class="nav-link"> Settings </a>
+      </nav>
+
+      <div class="close-menu" id="closeMenu">✕ Close Menu</div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main-content">
+      <section class="study-header">
+        <div>
+          <h1>📚 Study Session</h1>
+
+          <p>Practice your flashcards and improve retention.</p>
+        </div>
+      </section>
+
+      <section class="progress-section">
+        <div class="progress-top">
+          <span id="cardCounter"> Card 1 of 5 </span>
+
+          <span id="progressPercent"> 20% </span>
+        </div>
+
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+      </section>
+
+      <section class="flashcard-wrapper">
+        <div id="flashcard" class="flashcard">
+          <div class="flashcard-inner">
+            <div class="flashcard-front">
+              <h2 id="cardFront">What is photosynthesis?</h2>
+            </div>
+
+            <div class="flashcard-back">
+              <h2 id="cardBack">
+                Process plants use to convert sunlight into energy.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="prevBtn" class="primary-btn">Previous</button>
+
+        <button id="flipBtn" class="primary-btn">Flip</button>
+
+        <button id="nextBtn" class="primary-btn">Next</button>
+      </section>
+
+      <section class="controls">
+        <button id="shuffleBtn" class="primary-btn">Shuffle</button>
+
+        <button id="restartBtn" class="primary-btn">Restart</button>
+      </section>
+    </main>
+
+    <script src="js/quick-study.js"></script>
+
+    <script src="js/storage.js"></script>
+
+    <script src="js/mobile-nav.js"></script>
+  </body>
+</html>
